@@ -251,6 +251,7 @@ drawLadders();
 window.addEventListener('resize', () => {
   document.querySelector('#g-thang').innerHTML = '';
   adjustDivOrder();
-  drawSnakes();
   drawLadders();
+  drawSnakes();
+
 });

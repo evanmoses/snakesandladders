@@ -20,15 +20,19 @@
     <section class="board">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
-          <marker id="arrowhead" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-            <path d="M 0 0 L 10 5 L 0 10 z" />
+          <marker id="snakehead" viewBox="0 0 120 120" refX="105" refY="50" markerWidth="3" markerHeight="2.5" orient="auto" fill="#364f6b">
+          <path d="M 38 0 L 62 0 C 81 0 90.5 19 81 38 L 69 62 C 59.5 81 40.5 81 31 62 L 19 38 C 9.5 19 19 0 38 0 Z " transform="rotate(90,60,60)">
+          </path>
+          </marker>
+          <marker id="tail" viewBox="0 0 30 20" refX="1" refY="10" markerWidth="1.5" markerHeight="1.5" orient="auto" fill="#364f6b">
+            <path d="M 0,0 C 1,0 65,10 1,20 0,20 z" />
           </marker>
         </defs>
-        <g fill="none" id="g-thang" stroke="#364f6b" stroke-width="8" stroke-linecap="round">
+        <g fill="none" id="snakeSquiggle" stroke="#364f6b" stroke-width="23" marker-start="url(#snakehead)" marker-end="url(#tail)">
         </g>
-        <g fill="none" id="snakeSquiggle" stroke="#364f6b" stroke-width="30">
+        <g fill="none" id="g-thang" stroke="#787878" stroke-width="8" stroke-linecap="round">
         </g>
-        <g fill="none" id="tempPath" stroke="#364f6b" stroke-width="8" stroke-linecap="round">
+        <g fill="none" id="tempPath" stroke="#364f6b" stroke-width="6" stroke-linecap="round">
         </g>
       </svg>
       <div class="board-flex">
